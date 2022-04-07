@@ -17,13 +17,4 @@ RUN set -ex; \
 
 ENV PATH="${PATH}:/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin"
 
-# RUN set -ex; \
-#     wget --no-verbose https://github.com/LMDB/lmdb/archive/LMDB_0.9.29.tar.gz; \
-#     tar xfz LMDB_0.9.29.tar.gz; \
-#     rm LMDB_0.9.29.tar.gz; \
-#     mv lmdb-LMDB_0.9.29 lmdb; \
-#     cd lmdb/libraries/liblmdb; \
-#     make CC=armv7-unknown-linux-gnueabi-gcc AR=armv7-unknown-linux-gnueabi-ar liblmdb.a;
-
-
 WORKDIR /project
