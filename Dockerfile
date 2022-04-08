@@ -11,10 +11,10 @@ WORKDIR /opt
 
 # gcc
 RUN set -ex; \
-    wget https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz; \
-    tar xfJ gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz; \
-    rm gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz;
+    wget --no-verbose https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz; \
+    tar xfJ gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz; \
+    rm gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz;
 
-ENV PATH="${PATH}:/opt/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin"
+ENV PATH="${PATH}:/opt/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf/bin"
 
 WORKDIR /project
