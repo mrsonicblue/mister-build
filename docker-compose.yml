@@ -4,6 +4,6 @@ version: '3'
 services:
   build:
     build: .
-    image: mrsonicblue/mister-build
+    image: mrsonicblue/mister-build:10.2.1
     volumes:
       - .:/project
