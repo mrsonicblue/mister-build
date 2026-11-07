@@ -1,9 +1,8 @@
 # This can be built with: docker-compose build
 # Then push with: docker-compose push
-version: '3'
 services:
   build:
     build: .
-    image: mrsonicblue/mister-build:10.2.1
+    image: mrsonicblue/mister-build
     volumes:
       - .:/project
