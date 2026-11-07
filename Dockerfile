@@ -4,7 +4,7 @@ FROM debian:trixie-slim
 RUN set -ex; \
     apt-get update ; \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata; \
-    apt-get install -y make libtool gettext wget xz-utils; \
+    apt-get install -y bzip2 make libtool gettext wget xz-utils; \
     apt-get clean -y;
 
 WORKDIR /opt
